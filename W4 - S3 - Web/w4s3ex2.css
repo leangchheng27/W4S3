@@ -1,0 +1,133 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left::before {
+    content: '☰'; /* Unicode for the hamburger menu icon */
+    font-size: 24px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nav-left i {
+    display: none;
+}
+
+.nav-left img {
+    margin-left: 10px;
+}
+
+.nav-center {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 50%; /* Reduced width to shift it left */
+    margin-right:500px; /* Adds spacing on the left side */
+}
+
+.nav-center input {
+    width: 100%;
+    padding: 8px 40px 8px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.nav-center i {
+    position: absolute;
+    right: 15px;
+    color: #555;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+}
+
+header span {
+    padding: 8px 15px;
+    background: #e2e0e0;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+header .active {
+    background: #000;
+    color: #fff;
+}
+
+.video-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.video {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video-text {
+    display: flex;
+    padding: 10px 0;
+    align-items: flex-start;
+}
+
+.video-text .avatar {
+    margin-right: 10px;
+}
+
+.avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.text p {
+    margin: 5px 0 0;
+    color: rgb(105, 102, 102);
+}
+
+.text span {
+    font-size: 13px;
+    color: rgb(105, 102, 102);
+}
+
+.text strong {
+    font-weight: 500;
+    font-size: 16px;
+}
